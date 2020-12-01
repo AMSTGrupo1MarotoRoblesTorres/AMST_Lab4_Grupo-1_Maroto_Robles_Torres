@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".menu">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="Menú Principal"
+        android:textSize="36sp" />
+
+    <Button
+        android:id="@+id/btn_sensores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="revisarSensores"
+        android:text="CONTROL DE SENSORES" />
+
+    <Button
+        android:id="@+id/btn_pedidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HISTORIAL DE PEDIDOS" />
+
+    <Button
+        android:id="@+id/btn_privatedb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BASE PRIVADA" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Salir"
+        android:text="SALIR" />
+</LinearLayout>
