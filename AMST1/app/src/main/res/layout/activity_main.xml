@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Usuario"
+        android:fontFamily="cursive"
         android:inputType="text" />
 
     <EditText
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Contraseña"
+        android:fontFamily="cursive"
         android:inputType="textPassword" />
 
     <Button
@@ -40,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="irMenuPrincipal"
+        android:fontFamily="cursive"
         android:text="INICIO DE SESIÓN" />
 
 </LinearLayout>
