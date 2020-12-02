@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="30dp"
@@ -16,7 +17,9 @@
         android:gravity="center"
         android:padding="40dp"
         android:text="Bienvenido"
-        android:textSize="30sp" />
+        android:textColor="#7E7E7E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/txt_usuario"
@@ -24,7 +27,9 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Usuario"
-        android:inputType="text" />
+        android:inputType="text"
+        android:textColor="#7E7E7E"
+        android:textColorHint="#7E7E7E" />
 
     <EditText
         android:id="@+id/txt_pass"
@@ -32,12 +37,15 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#7E7E7E"
+        android:textColorHint="#7E7E7E" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:onClick="irMenuPrincipal"
         android:text="INICIO DE SESIÓN" />
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="30dp"
     tools:context=".menu">
@@ -15,7 +16,9 @@
         android:gravity="center"
         android:padding="30dp"
         android:text="Menú Principal"
-        android:textSize="36sp" />
+        android:textColor="#7E7E7E"
+        android:textSize="36sp"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btn_sensores"

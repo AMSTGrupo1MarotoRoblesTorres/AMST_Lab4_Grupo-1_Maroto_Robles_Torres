@@ -44,10 +44,14 @@ public class MainActivity extends AppCompatActivity {
         params.put("username", usuario);
         params.put("password", password);
         JSONObject parametros = new JSONObject(params);
+
         String login_url = "https://amst-labx.herokuapp.com/db/nuevo-jwt";
         JsonObjectRequest request = new JsonObjectRequest( Request.Method.POST, login_url, parametros, new Response.Listener<JSONObject>() {
-            @Override public void onResponse(JSONObject response) { System.out.println(response);
-            try { token = response.getString("token");
+            @Override public void onResponse(JSONObject response) {
+                System.out.println(response);
+            try {
+                token = response.getString("token");
+
                 Intent menuPrincipal = new Intent(getBaseContext(), menu.class);
                 menuPrincipal.putExtra("token", token);
                 startActivity(menuPrincipal);
@@ -60,8 +64,14 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog alertDialog = new AlertDialog.Builder(MainActivity.this).create();
                 alertDialog.setTitle("Alerta"); alertDialog.setMessage("Credenciales Incorrectas");
                 alertDialog.setButton(AlertDialog.BUTTON_NEUTRAL, "OK", new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) { dialog.dismiss(); } }); alertDialog.show();
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                });
+                alertDialog.show();
             }
-        }); mQueue.add(request); }
+        });
+
+        mQueue.add(request); }
 
 }

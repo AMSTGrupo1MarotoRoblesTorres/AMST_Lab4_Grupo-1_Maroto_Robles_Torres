@@ -4,9 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".red_sensores">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sensores"
+        android:textColor="#7E7E7E"
+        android:textSize="30sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +28,7 @@
 
         <ImageView
             android:id="@+id/img1"
-            android:layout_width="12dp"
+            android:layout_width="65dp"
             android:layout_height="90dp"
             android:layout_weight="1"
             android:paddingRight="15dp"
@@ -25,12 +36,13 @@
 
         <TextView
             android:id="@+id/tempTx"
-            android:layout_width="90dp"
+            android:layout_width="112dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Temperatura Actual"
-            android:textSize="24sp" />
+            android:textColor="#7E7E7E"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/tempVal"
@@ -39,7 +51,17 @@
             android:layout_weight="1"
             android:gravity="right|center_vertical"
             android:text="°C"
+            android:textColor="#7E7E7E"
             android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="1"
+            android:onClick="agregar_temperatura"
+            app:srcCompat="@drawable/ic_boton_agregar" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -64,6 +86,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Humedad"
+            android:textColor="#7E7E7E"
             android:textSize="24sp" />
 
         <TextView
@@ -73,6 +96,7 @@
             android:layout_weight="1"
             android:gravity="right|center_vertical"
             android:text=" %"
+            android:textColor="#7E7E7E"
             android:textSize="24sp" />
     </LinearLayout>
 
@@ -98,6 +122,7 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:text="Peso"
+            android:textColor="#7E7E7E"
             android:textSize="24sp" />
 
         <TextView
@@ -107,6 +132,7 @@
             android:layout_weight="1"
             android:gravity="right|center_vertical"
             android:text=" g"
+            android:textColor="#7E7E7E"
             android:textSize="24sp" />
     </LinearLayout>
 </LinearLayout>
